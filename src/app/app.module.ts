@@ -9,17 +9,20 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { ViewAllComponent } from './view-all/view-all.component';
+import { SearchEmployeeComponent } from './search-employee/search-employee.component';
 
 const myRoute:Routes=[{path:"",component:AddEmployeeComponent},
                       {path:"add",component:AddEmployeeComponent},
-                      {path:"view",component:ViewAllComponent},]
+                      {path:"view",component:ViewAllComponent},
+                      {path:"search",component:SearchEmployeeComponent},]
 
 @NgModule({
   declarations: [
     AppComponent,
     AddEmployeeComponent,
     NavBarComponent,
-    ViewAllComponent
+    ViewAllComponent,
+    SearchEmployeeComponent
   ],
   imports: [
     BrowserModule,
